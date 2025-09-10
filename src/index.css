@@ -44,6 +44,18 @@ All colors MUST be HSL.
     --hero-gradient: linear-gradient(135deg, hsl(236 72% 79%), hsl(142 71% 45%));
     --step-bg: 245 30% 98%;
     --step-border: 240 20% 88%;
+    
+    /* Additional lesson component colors */
+    --section-bg: 0 0% 100%;
+    --section-border: 240 20% 90%;
+    --flow-bg: 236 72% 97%;
+    --flow-border: 236 72% 87%;
+    --api-bg: 245 20% 97%;
+    --api-border: 245 20% 87%;
+    --structure-bg: 0 0% 100%;
+    --structure-border: 240 20% 90%;
+    --folder: 142 71% 45%;
+    --file: 225 15% 15%;
 
     --radius: 0.5rem;
 
@@ -92,6 +104,18 @@ All colors MUST be HSL.
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+    
+    /* Dark mode lesson colors */
+    --section-bg: 217.2 32.6% 17.5%;
+    --section-border: 217.2 32.6% 25%;
+    --flow-bg: 217.2 32.6% 20%;
+    --flow-border: 217.2 32.6% 28%;
+    --api-bg: 217.2 32.6% 20%;
+    --api-border: 217.2 32.6% 28%;
+    --structure-bg: 217.2 32.6% 17.5%;
+    --structure-border: 217.2 32.6% 25%;
+    --folder: 142 71% 45%;
+    --file: 210 40% 98%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

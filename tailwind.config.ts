@@ -56,6 +56,24 @@ export default {
           bg: "hsl(var(--step-bg))",
           border: "hsl(var(--step-border))",
         },
+        section: {
+          bg: "hsl(var(--section-bg))",
+          border: "hsl(var(--section-border))",
+        },
+        flow: {
+          bg: "hsl(var(--flow-bg))",
+          border: "hsl(var(--flow-border))",
+        },
+        api: {
+          bg: "hsl(var(--api-bg))",
+          border: "hsl(var(--api-border))",
+        },
+        structure: {
+          bg: "hsl(var(--structure-bg))",
+          border: "hsl(var(--structure-border))",
+        },
+        folder: "hsl(var(--folder))",
+        file: "hsl(var(--file))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
