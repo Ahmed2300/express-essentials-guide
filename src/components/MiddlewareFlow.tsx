@@ -3,13 +3,13 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 
 export const MiddlewareFlow = () => {
   const flowSteps = [
-    { name: "Request", color: "bg-primary/10 border-primary/20 text-primary" },
-    { name: "First MW", color: "bg-accent/10 border-accent/20 text-accent" },
-    { name: "Auth MW", color: "bg-accent/10 border-accent/20 text-accent" },
-    { name: "JSON Parser", color: "bg-accent/10 border-accent/20 text-accent" },
-    { name: "Router", color: "bg-secondary/10 border-secondary/20 text-secondary" },
-    { name: "Controller", color: "bg-secondary/10 border-secondary/20 text-secondary" },
-    { name: "Response", color: "bg-primary/10 border-primary/20 text-primary" }
+    { name: "1. Request Arrives", color: "bg-blue-100 border-blue-300 text-blue-800", description: "Client sends HTTP request" },
+    { name: "2. Logging MW", color: "bg-green-100 border-green-300 text-green-800", description: "Log request details" },
+    { name: "3. JSON Parser MW", color: "bg-yellow-100 border-yellow-300 text-yellow-800", description: "Parse request body" },
+    { name: "4. Student Router", color: "bg-purple-100 border-purple-300 text-purple-800", description: "Route to /students" },
+    { name: "5. Route Handler", color: "bg-orange-100 border-orange-300 text-orange-800", description: "Match HTTP method" },
+    { name: "6. Controller Function", color: "bg-pink-100 border-pink-300 text-pink-800", description: "Execute business logic" },
+    { name: "7. Response Sent", color: "bg-blue-100 border-blue-300 text-blue-800", description: "Send JSON response" }
   ];
 
   return (
@@ -21,8 +21,9 @@ export const MiddlewareFlow = () => {
         <div className="flex flex-col items-center space-y-4">
           {flowSteps.map((step, index) => (
             <div key={step.name} className="flex flex-col items-center">
-              <div className={`px-4 py-2 rounded-lg border-2 ${step.color} font-medium`}>
-                {step.name}
+              <div className={`px-4 py-3 rounded-lg border-2 ${step.color} font-medium text-center min-w-[200px]`}>
+                <div className="font-semibold">{step.name}</div>
+                <div className="text-xs mt-1 opacity-80">{step.description}</div>
               </div>
               {index < flowSteps.length - 1 && (
                 <ArrowDown className="mt-2 mb-2 text-muted-foreground" size={20} />
